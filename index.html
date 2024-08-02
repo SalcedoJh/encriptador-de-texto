@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-ico" href="./image/Logo.svg">
+</head>
+<body>
+    <header class="header">
+        <img class="logo__alura" src="./image/Logo.svg" alt="logo de alura-latan">       
+    </header>
+    <main class="container">
+        <section class="texto__encriptar">
+            <textarea id="inputTexto" class="input__texto" placeholder="ingrese el texto aquí"></textarea>
+            <div class="aviso">
+                <img src="./image/aviso.svg">
+                <p class="aviso__texto">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button id="btnencriptar" class="encriptar">Encriptar</button>
+                <button id="btndesencriptar" class="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="texto__encriptado">
+            <div id="contenido" class="contenido">
+                <img id="imagenCont" class="imagen__contenido" src="./image/Muñeco.png" alt="imgen de muñeco">
+                <textarea id="ouputTexto" class="texto__uno" disabled >Ningún mensaje fue encontrado</textarea>
+                <p id="mensajetext" class="texto__dos">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <button id="btncopiar" class="copiar">copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2024 desarrollado por jhomerson salcedo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
